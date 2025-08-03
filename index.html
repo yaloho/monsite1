@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Dynamique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>karaanvani.tec</h1>
+
+      <div class="menu-wrapper">
+        <button id="menuToggle">Menu ☰</button>
+        <nav id="mainNav" class="hidden">
+          <a href="#" class="nav-link active" onclick="showSection('accueil', this)">Accueil</a>
+          <a href="#" class="nav-link" onclick="showSection('apropos', this)">À propos</a>
+          <a href="#" class="nav-link" onclick="showSection('projets', this)">Projets</a>
+          <a href="#" class="nav-link" onclick="showSection('contact', this)">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="accueil" class="content-section">
+      <h2>Bienvenue</h2>
+      <p>Voici la page d’accueil d’un site moderne, responsive et dynamique.</p>
+    </section>
+
+    <section id="apropos" class="content-section hidden">
+      <h2>À propos</h2>
+      <p>Ce site est structuré avec HTML, stylisé avec CSS, et dynamisé avec JavaScript.</p>
+    </section>
+
+    <section id="projets" class="content-section hidden">
+      <h2>Projets</h2>
+      <p>Ajoutez ici des descriptions, images, ou liens vers vos réalisations.</p>
+    </section>
+
+    <section id="contact" class="content-section hidden">
+      <h2>Contact</h2>
+      <p>Contactez-moi à l’adresse : <a href="mailto:tiddomb@gmail.com">tiddomb@gmail.com</a></p>
+      <p>Contactez-moi au numéro : <a href="tel:+22657503396">00226 57503396</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Yaloho karaanvani Ahmad Tidiane DOMBOUE - Tous droits réservés</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
